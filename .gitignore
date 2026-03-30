@@ -46,4 +46,24 @@ yarn-error.log*
 
 # Cloudflare Workers (if deploying via wrangler)
 .wrangler/
-wrangler.toml (local overrides only)
+wrangler.local.jsonc
+
+# Documentation & Non-standard directories
+/md/
+/docs/
+/archive/
+*.md (except root level README)
+
+# Conversion scripts (build artifacts)
+convert-*.js
+
+# OS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pem
+*.key
+
+# Sensitive/Local
+.env.production.local
+.env.development.local
