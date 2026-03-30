@@ -1,0 +1,52 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "khuncamp",
+  "main": "js/main.js",
+  "compatibility_date": "2026-03-30",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "env": {
+    "production": {
+      "name": "khuncamp-prod",
+      "routes": [
+        {
+          "pattern": "khuncamp.com/*",
+          "zone_name": "khuncamp.com"
+        }
+      ]
+    },
+    "staging": {
+      "name": "khuncamp-staging"
+    }
+  },
+
+  "assets": {
+    "directory": "./",
+    "include": [
+      "**/*.html",
+      "**/*.css",
+      "**/*.js",
+      "**/*.webp",
+      "**/*.jpg",
+      "**/*.png",
+      "**/*.svg",
+      "**/*.mp4",
+      "**/*.webm",
+      "**/*.xml",
+      "**/*.txt"
+    ],
+    "exclude": [
+      "node_modules/**/*",
+      ".git/**/*",
+      ".claude/**/*",
+      "md/**/*",
+      "docs/**/*"
+    ]
+  },
+
+  "build": {
+    "command": "echo 'Build complete'",
+    "watch_paths": ["**/*.html", "**/*.css", "**/*.js"]
+  }
+}
