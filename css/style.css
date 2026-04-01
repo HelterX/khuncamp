@@ -877,3 +877,37 @@ section {
     cursor: pointer;
   }
 }
+/* HERO STATS */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+.hero-stat-number {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2px;
+}
+.hero-stat-divider {
+  width: 1px;
+  height: 36px;
+  background: #444;
+}
+@media (max-width: 480px) {
+  .hero-stats {
+    gap: 1rem;
+  }
+  .hero-stat-number {
+    font-size: 1.2rem;
+  }
+}
