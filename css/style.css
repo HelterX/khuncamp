@@ -1004,3 +1004,40 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* ==============================
+   FOOTER SOCIALS
+============================== */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-social-link {
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: var(--gold-primary);
+  border-color: var(--gold-primary);
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
