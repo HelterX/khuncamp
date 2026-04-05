@@ -362,83 +362,297 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-<section id="testimonials">
+   <section class="testimonials-section" id="testimonials">
   <div class="container">
-    <div class="section-header reveal-up text-center">
-      <p class="section-eyebrow">WHAT PEOPLE SAY</p>
-      <h2>Trusted by Creators <span class="gold-gradient-text">& Collaborators</span></h2>
+
+    <!-- Header -->
+    <p class="section-eyebrow">What people say</p>
+    <h2 class="section-title">Trusted by creators<br>&amp; collaborators</h2>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">500M+</div>
+        <div class="stat-label">Total Views Generated</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3M+</div>
+        <div class="stat-label">Subscribers Gained</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3.5×</div>
+        <div class="stat-label">Average Growth Rate</div>
+      </div>
     </div>
-    <div class="testi-grid">
 
-      <div class="testi-card testi-featured reveal-up">
-        <span class="badge" style="margin-bottom: 1.5rem;">Verified Collaborator</span>
-        <p class="testi-quote">"Shawn has shown great leadership and initiative. He's definitely someone I'd like to have on my team!"</p>
-        <div class="testi-author">
-          <div class="testi-avatar">JB</div>
-          <div>
-            <p class="testi-name">Jamrell Buynay</p>
-            <p class="testi-role">Host & Segment Producer, Filipinos of Thailand</p>
+    <!-- ── Featured Testimonial ─────────────────────────────────── -->
+    <!--
+      HOW TO ADD YOUR VIDEO:
+      Option A – YouTube embed (recommended):
+        Replace the .play-overlay div with:
+        <iframe width="100%" height="100%" style="position:absolute;inset:0;border:none;"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      Option B – Video file:
+        <video src="videos/marcus-testimonial.mp4" poster="images/marcus-thumb.jpg"
+               controls style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></video>
+
+      Option C – Thumbnail image + play button (current placeholder):
+        Add inside .featured-media (before .play-overlay):
+        <img src="images/marcus-thumb.jpg" alt="Marcus T. testimonial" />
+    -->
+    <div class="featured-card">
+
+      <div class="featured-media">
+         <video src="images/marcus-testimonial.mp4" poster="images/marcus-thumb.jpg"
+               controls style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <!-- PLACEHOLDER — replace with your video/thumbnail (see instructions above) -->
+        <div class="media-badge">Featured</div>
+        <div class="play-overlay">
+          <div class="play-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6 4l12 6-12 6V4z" fill="#000"/>
+            </svg>
           </div>
+          <span class="play-label">Video Testimonial</span>
         </div>
       </div>
 
-      <div class="testi-card reveal-up">
-        <p class="testi-quote">"Before Khun Camp I was stuck at 8K for almost a year. Within 10 weeks we crossed 22K. The thumbnail and title framework alone changed everything."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">MT</div>
-          <div>
-            <p class="testi-name">Marcus T.</p>
-            <p class="testi-role">Travel Creator · 22K Subscribers</p>
-          </div>
-        </div>
-      </div>
+      <div class="featured-content">
+        <span class="verified-badge">Verified Creator</span>
 
-      <div class="testi-card reveal-up">
-        <p class="testi-quote">"I used to spend 3 hours just deciding on a title. Now we have a repeatable process and my team handles it. I just show up and record."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">AL</div>
-          <div>
-            <p class="testi-name">Aisha L.</p>
-            <p class="testi-role">Finance Creator · 41K Subscribers</p>
-          </div>
-        </div>
-      </div>
+        <p class="quote-text">
+          Before Khun Camp I was stuck at 8K for almost a year. Within 10 weeks we crossed 22K. The thumbnail and title framework alone changed everything.
+        </p>
 
-      <div class="testi-card reveal-up">
-        <p class="testi-quote">"The audit alone was worth every dollar. Shawn identified three critical gaps in my upload strategy I had completely overlooked for 18 months."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">RK</div>
-          <div>
-            <p class="testi-name">Ryan K.</p>
-            <p class="testi-role">Tech Creator · 18K Subscribers</p>
+        <div>
+          <div class="creator-row" style="margin-bottom: 16px;">
+            <div class="avatar">
+              <!--
+                REPLACE with creator photo:
+                <img src="images/marcus.jpg" alt="Marcus T." />
+              -->
+              MT
+            </div>
+            <div>
+              <div class="creator-name">Marcus T.</div>
+              <div class="creator-meta">Travel Creator · 22K Subscribers</div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="testi-card reveal-up">
-        <p class="testi-quote">"What sets Khun Camp apart is the data focus. Every decision is backed by numbers, not vibes. My average view duration went up 40% in two months."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">SC</div>
-          <div>
-            <p class="testi-name">Sofia C.</p>
-            <p class="testi-role">Lifestyle Creator · 35K Subscribers</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testi-card reveal-up">
-        <p class="testi-quote">"Honestly I was skeptical. But the weekly strategy calls and the SEO system delivered real results fast. This is how a professional operation runs."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">DN</div>
-          <div>
-            <p class="testi-name">David N.</p>
-            <p class="testi-role">Business Creator · 29K Subscribers</p>
+          <div class="tags">
+            <!--
+              REPLACE with actual brand block:
+              <div class="card-brand">
+                <div class="brand-logo"><img src="images/brand-logo.png" alt="Brand" /></div>
+                <span class="brand-name">Channel Name</span>
+                <span class="brand-stat">+14K</span>
+              </div>
+            -->
+            <span class="tag">Travel</span>
+            <span class="tag tag-accent">+14K Growth</span>
+            <span class="stars">★★★★★</span>
           </div>
         </div>
       </div>
 
     </div>
+    <!-- /Featured -->
+
+    <!-- ── 3-Column Grid ─────────────────────────────────────────── -->
+    <div class="cards-grid">
+
+      <!-- Card 1 — Creator Photo -->
+      <div class="tcard">
+        <div class="card-photo">
+          
+           
+            <img src="images/callie.jpg" alt="Aisha L." />
+          
+          <span class="photo-placeholder"></span>
+        </div>
+
+        <p class="card-quote">
+          "I worked with KhunShaun as the videographer for my workshop at Da Nang Nomad Fest, and it was such a positive experience. He filmed the workshop and later interviewed me, and throughout the process he was professional, relaxed, and very easy to work with.
+
+What stood out most was the quality of his work was the footage and audio turned out beautifully and really captured the feeling of the event. It’s clear he puts a lot of care into what he does.
+
+I’m very grateful for the work he did and would happily recommend him to anyone looking for a talented videographer."
+        </p>
+
+        <div class="creator-row">
+          <div class="avatar">
+            <!--<img src="images/aisha.jpg" alt="Aisha L." />-->
+            CJ
+          </div>
+          <div>
+            <div class="creator-name">Callie Johnson</div>
+            <div class="creator-meta">Founder - The Resonance Container</div>
+          </div>
+        </div>
+
+        <div class="card-brand">
+          <div class="brand-logo">
+            <!--<img src="images/aisha-brand.png" alt="Brand" />-->
+            CJ
+          </div>
+          <span class="brand-name">calliejohnson.substack.com</span>
+          <span class="brand-stat">check out!</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Business</span>
+          <span class="stars">★★★★★</span>
+        </div>
+      </div>
+
+      <!-- Card 2 — Video Testimonial -->
+      <div class="tcard">
+        <div class="card-media">
+          <!--
+            REPLACE with video thumbnail + play, or embed:
+            <img src="images/ryan-thumb.jpg" alt="Ryan K. testimonial" />
+          -->
+          <div class="play-btn-sm">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
+              <path d="M6 4l12 6-12 6V4z" fill="#000"/>
+            </svg>
+          </div>
+          <span class="card-media-label">Video Testimonial</span>
+        </div>
+
+        <p class="card-quote">
+          "The audit alone was worth every dollar. Shawn identified three critical gaps in my upload strategy I had completely overlooked for 18 months."
+        </p>
+
+        <div class="creator-row">
+          <div class="avatar">RK</div>
+          <div>
+            <div class="creator-name">Ryan K.</div>
+            <div class="creator-meta">Tech Creator · 18K Subscribers</div>
+          </div>
+        </div>
+
+        <div class="card-brand">
+          <div class="brand-logo">RK</div>
+          <span class="brand-name">Tech Channel</span>
+          <span class="brand-stat">18K SUBS</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Tech</span>
+          <span class="stars">★★★★★</span>
+        </div>
+      </div>
+
+      <!-- Card 3 — Text Only -->
+      <div class="tcard">
+        <div class="tags" style="margin-bottom: -4px;">
+          <span class="stars">★★★★★</span>
+        </div>
+
+        <p class="card-quote">
+          "I worked with KhunShaun as the videographer for my workshop at Da Nang Nomad Fest, and it was such a positive experience. He filmed the workshop and later interviewed me, and throughout the process he was professional, relaxed, and very easy to work with.
+
+What stood out most was the quality of his work was the footage and audio turned out beautifully and really captured the feeling of the event. It’s clear he puts a lot of care into what he does.
+
+I’m very grateful for the work he did and would happily recommend him to anyone looking for a talented videographer."
+        </p>
+
+        <div class="creator-row">
+          <div class="avatar">SC</div>
+          <div>
+            <div class="creator-name">Callie Johnson</div>
+            <div class="creator-meta">Founder · The Resonance Container</div>
+          </div>
+        </div>
+
+        <div class="card-brand">
+          <div class="brand-logo">SC</div>
+          <span class="brand-name">Lifestyle Channel</span>
+          <span class="brand-stat">+40% DURATION</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Lifestyle</span>
+          <span class="tag tag-accent">+40% Watch Time</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- /3-column grid -->
+
+    <!-- ── 2-Column Lower Row ────────────────────────────────────── -->
+    <div class="cards-grid-2" style="margin-top: 16px;">
+
+      <!-- Card 4 -->
+      <div class="tcard">
+        <div class="tags" style="margin-bottom: -4px;">
+          <span class="stars">★★★★★</span>
+        </div>
+
+        <p class="card-quote">
+          "Honestly I was skeptical. But the weekly strategy calls and the SEO system delivered real results fast. This is how a professional operation runs."
+        </p>
+
+        <div class="creator-row">
+          <div class="avatar">DN</div>
+          <div>
+            <div class="creator-name">David N.</div>
+            <div class="creator-meta">Business Creator · 29K Subscribers</div>
+          </div>
+        </div>
+
+        <div class="card-brand">
+          <!--
+            REPLACE with actual brand logo:
+            <div class="brand-logo"><img src="images/david-brand.png" alt="Brand" /></div>
+          -->
+          <div class="brand-logo">DN</div>
+          <span class="brand-name">Business Channel</span>
+          <span class="brand-stat">29K SUBS</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Business</span>
+        </div>
+      </div>
+
+      <!-- Card 5 — Verified Collaborator -->
+      <div class="tcard">
+        <span class="verified-badge">Verified Collaborator</span>
+
+        <p class="card-quote">
+          "Shawn has shown great leadership and initiative. He's definitely someone I'd like to have on my team!"
+        </p>
+
+        <div class="creator-row">
+          <div class="avatar">JB</div>
+          <div>
+            <div class="creator-name">Jamrell Buynay</div>
+            <div class="creator-meta">Host &amp; Segment Producer, Filipinos of Thailand</div>
+          </div>
+        </div>
+
+        <div class="card-brand">
+          <!--
+            REPLACE with actual brand logo:
+            <div class="brand-logo"><img src="images/filipinos-thailand-logo.png" alt="Filipinos of Thailand" /></div>
+          -->
+          <div class="brand-logo">FT</div>
+          <span class="brand-name">Filipinos of Thailand</span>
+          <span class="brand-stat">PARTNER</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Collaborator</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- /2-column grid -->
+
   </div>
 </section>
 
