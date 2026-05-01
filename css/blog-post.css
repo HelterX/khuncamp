@@ -1,0 +1,396 @@
+/* ═══════════════════════════════════════════════════════════════
+   KHUN CAMP — BLOG POST STYLES
+   Drop this file in your css/ folder as blog-post.css
+   Loaded only on individual blog post pages
+═══════════════════════════════════════════════════════════════ */
+
+/* ── POST HEADER ───────────────────────────────────────────────── */
+.post-header {
+  padding: 120px 0 56px;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.post-header-inner {
+  max-width: 780px;
+}
+
+.post-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.post-breadcrumb a {
+  color: #c9a84c;
+  text-decoration: none;
+}
+
+.post-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.post-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.post-date-label {
+  font-size: 11px;
+  color: #3a3a3a;
+}
+
+.post-title {
+  font-size: clamp(28px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.post-intro {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 32px;
+  max-width: 620px;
+}
+
+.post-byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #c9a84c;
+  color: #111;
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.post-avatar--sm {
+  width: 36px;
+  height: 36px;
+  font-size: 11px;
+}
+
+.post-author {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.post-read-time {
+  font-size: 12px;
+  color: #444;
+  margin: 2px 0 0;
+}
+
+/* ── POST LAYOUT ───────────────────────────────────────────────── */
+.post-body {
+  padding: 64px 0 80px;
+}
+
+.post-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 64px;
+  align-items: start;
+  max-width: 1100px;
+}
+
+@media (max-width: 900px) {
+  .post-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .post-sidebar {
+    order: -1;
+  }
+}
+
+/* ── POST CONTENT ──────────────────────────────────────────────── */
+.post-content {
+  min-width: 0;
+}
+
+.post-content h2 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 48px 0 16px;
+  letter-spacing: -0.3px;
+}
+
+.post-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin: 32px 0 12px;
+}
+
+.post-content p {
+  font-size: 16px;
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.post-content strong {
+  color: #e0e0e0;
+  font-weight: 700;
+}
+
+.post-content em {
+  color: #999;
+  font-style: italic;
+}
+
+/* Callout boxes */
+.post-callout {
+  background: #191710;
+  border-left: 3px solid #c9a84c;
+  border-radius: 0 3px 3px 0;
+  padding: 20px 24px;
+  margin: 32px 0;
+  font-size: 16px;
+  color: #c9a84c;
+  line-height: 1.65;
+  font-weight: 600;
+}
+
+.post-callout--neutral {
+  background: #181818;
+  border-left-color: #333;
+  color: #888;
+  font-weight: 400;
+}
+
+/* Lists */
+.post-list {
+  margin: 20px 0 28px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.post-list li {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.7;
+  padding: 8px 0 8px 24px;
+  position: relative;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #c9a84c;
+  font-size: 12px;
+  top: 10px;
+}
+
+ol.post-list {
+  counter-reset: post-counter;
+}
+
+ol.post-list li::before {
+  content: counter(post-counter);
+  counter-increment: post-counter;
+  font-size: 10px;
+  font-weight: 900;
+  color: #c9a84c;
+  top: 10px;
+}
+
+/* Section divider */
+.post-divider {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 48px 0;
+}
+
+/* Pull quote */
+.post-quote {
+  border-left: none;
+  margin: 40px 0;
+  padding: 28px 32px;
+  background: #161616;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0e0e0;
+  line-height: 1.5;
+  font-style: normal;
+  position: relative;
+}
+
+.post-quote::before {
+  content: '"';
+  font-size: 64px;
+  color: #c9a84c;
+  line-height: 0;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  opacity: 0.4;
+  font-family: Georgia, serif;
+}
+
+/* ── SIDEBAR ───────────────────────────────────────────────────── */
+.post-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 120px;
+}
+
+.sidebar-card {
+  background: #181818;
+  border: 1px solid #242424;
+  border-radius: 3px;
+  padding: 22px 20px;
+}
+
+.sidebar-card--gold {
+  background: #191710;
+  border-color: #c9a84c;
+}
+
+.sidebar-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.sidebar-card--gold .sidebar-label {
+  color: #c9a84c;
+}
+
+.sidebar-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-author-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin: 0 0 3px;
+}
+
+.sidebar-author-bio {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sidebar-cta-headline {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.sidebar-cta-body {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.sidebar-card--gold .sidebar-cta-body {
+  color: #7a6e42;
+}
+
+.sidebar-back {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none;
+  padding: 12px 0;
+  display: block;
+  transition: color 0.2s;
+}
+
+.sidebar-back:hover {
+  color: #c9a84c;
+}
+
+/* ── POST FOOTER CTA ───────────────────────────────────────────── */
+.post-footer-cta {
+  border-top: 1px solid #1e1e1e;
+  padding: 80px 0;
+}
+
+.post-footer-cta-inner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-footer-cta-inner h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  margin-bottom: 16px;
+}
+
+.post-footer-cta-inner .cta-body {
+  margin-bottom: 32px;
+}
+
+/* ── MOBILE ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .post-header {
+    padding: 100px 0 40px;
+  }
+
+  .post-title {
+    font-size: 28px;
+  }
+
+  .post-intro {
+    font-size: 16px;
+  }
+
+  .post-content h2 {
+    font-size: 22px;
+  }
+
+  .post-quote {
+    font-size: 17px;
+    padding: 22px 20px 22px 28px;
+  }
+
+  .post-sidebar {
+    position: static;
+  }
+}
