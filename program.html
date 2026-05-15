@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Development Program | Khun Camp</title>
+  <meta name="description" content="60 days of content strategy, editing support, brand deal outreach, and a full team behind you. Limited intake. Apply now.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://khuncamp.com/program.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khuncamp.com/program.html" />
+  <meta property="og:title" content="Creator Development Program | Khun Camp" />
+  <meta property="og:description" content="60 days of real structure, a full team, and a clear path toward monetization. Limited intake." />
+  <meta property="og:image" content="https://khuncamp.com/images/og-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/webp" sizes="128x128" href="images/KhunCamp-Logo-badge-favicon-128.webp">
+  <link rel="apple-touch-icon" href="images/KhunCamp-Logo-badge-favicon-128.webp">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ── Program page — scoped additions only ── */
+
+    .prog-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .prog-hero-content {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .prog-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--gold-primary);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .prog-hero-content h1 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      margin: 1rem 0 1.5rem;
+      line-height: 1;
+    }
+
+    .prog-hero-content .hero-subtext {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    .prog-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 3rem;
+    }
+
+    .prog-stat-num {
+      display: block;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      line-height: 1;
+    }
+
+    .prog-stat-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+      display: block;
+    }
+
+    /* ── What You Get ── */
+    .prog-section {
+      padding: 100px 0;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .prog-section-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--gold-primary);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .get-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1px;
+      background: var(--glass-border);
+      border: 1px solid var(--glass-border);
+      margin-top: 3rem;
+    }
+
+    .get-item {
+      background: var(--bg-deep);
+      padding: 2rem;
+      transition: background 0.3s ease;
+    }
+
+    .get-item:hover {
+      background: var(--bg-charcoal);
+    }
+
+    .get-item-icon {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .get-item h4 {
+      font-size: 0.8rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .get-item p {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* ── Deal Box ── */
+    .deal-box {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .deal-box h3 {
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      color: var(--text-main);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    .deal-layout {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .deal-bar-wrap { flex: 1; min-width: 220px; }
+
+    .deal-bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .deal-track {
+      height: 8px;
+      background: rgba(255,255,255,0.06);
+      position: relative;
+    }
+
+    .deal-fill {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 80%;
+      background: var(--gold-primary);
+    }
+
+    .deal-pct-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .deal-pct-you { color: var(--gold-primary); }
+    .deal-pct-kc  { color: var(--text-dim); }
+
+    .deal-desc {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-top: 1.25rem;
+      line-height: 1.7;
+    }
+
+    .deal-example {
+      background: var(--bg-charcoal);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 1.5rem 2rem;
+      min-width: 200px;
+    }
+
+    .deal-example-eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .deal-example-deal {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .deal-example-you {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      display: block;
+      line-height: 1;
+    }
+
+    .deal-example-note {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    /* ── Pricing Block ── */
+    .price-block {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 2.5rem 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+
+    .price-number {
+      font-size: clamp(3.5rem, 6vw, 5rem);
+      font-weight: 900;
+      color: var(--gold-primary);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .price-detail {
+      font-size: 0.95rem;
+      color: var(--text-dim);
+      line-height: 1.8;
+    }
+
+    .price-detail strong { color: var(--text-main); }
+
+    /* ── Not For / Is For ── */
+    .qualifier {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      line-height: 1.9;
+      border-left: 2px solid var(--gold-primary);
+      padding-left: 1.5rem;
+      margin: 3rem 0 0;
+    }
+
+    .qualifier strong { color: var(--text-main); }
+
+    /* ── Form Section ── */
+    #apply {
+      background: var(--bg-charcoal);
+    }
+
+    .form-box {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 3rem;
+      margin-top: 3rem;
+    }
+
+    .form-box h3 {
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      color: var(--text-main);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-box > p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-bottom: 2.5rem;
+    }
+
+    /* Tally embed */
+    .tally-embed {
+      width: 100%;
+      min-height: 560px;
+      border: none;
+      background: transparent;
+      display: block;
+    }
+
+    /* Placeholder shown until Tally is set up */
+    .tally-placeholder {
+      background: rgba(212,175,55,0.03);
+      border: 1px dashed rgba(212,175,55,0.2);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .tally-placeholder strong {
+      display: block;
+      color: var(--gold-primary);
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .tally-placeholder p {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      max-width: 400px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .prog-hero {
+        padding: 140px 0 80px;
+      }
+
+      .deal-layout {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .deal-example {
+        width: 100%;
+      }
+
+      .price-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .form-box {
+        padding: 2rem 1.5rem;
+      }
+
+      .get-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .get-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .prog-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <header id="site-header">
+    <nav class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/KhunCamp-Logo-nav.webp" alt="Khun Camp Logo" height="46">
+      </a>
+      <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="btn-primary btn-sm magnetic-item nav-desktop-cta">Book a Call</a>
+      <button class="ham-btn" id="ham-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- SUB NAV -->
+    <div id="sub-nav">
+      <div class="sub-nav-inner">
+        <a href="index.html"             class="sub-nav-link">Home</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#who-we-serve" class="sub-nav-link">Who We Serve</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#audit"        class="sub-nav-link">Pricing</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#problem"      class="sub-nav-link">Problem</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#solution"     class="sub-nav-link">System</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#how-it-works" class="sub-nav-link">Process</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#deliverables" class="sub-nav-link">Deliverables</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#proof"        class="sub-nav-link">Proof</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#testimonials" class="sub-nav-link">Testimonials</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#faq"          class="sub-nav-link">FAQ</a>
+        <span class="sub-nav-div"></span>
+        <a href="blog.html"               class="sub-nav-link">Blog</a>
+        <span class="sub-nav-div"></span>
+        <a href="program.html"            class="sub-nav-link active">Program</a>
+        <span class="sub-nav-div"></span>
+        <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="sub-nav-link">Book a Call</a>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-links">
+        <a href="index.html"              class="mob-menu-link"><span class="mob-num">01</span><span class="mob-name">Home</span><div class="mob-bar"></div></a>
+        <a href="index.html#who-we-serve" class="mob-menu-link"><span class="mob-num">02</span><span class="mob-name">Who We Serve</span><div class="mob-bar"></div></a>
+        <a href="index.html#audit"        class="mob-menu-link"><span class="mob-num">03</span><span class="mob-name">Pricing</span><div class="mob-bar"></div></a>
+        <a href="index.html#problem"      class="mob-menu-link"><span class="mob-num">04</span><span class="mob-name">Problem</span><div class="mob-bar"></div></a>
+        <a href="index.html#solution"     class="mob-menu-link"><span class="mob-num">05</span><span class="mob-name">System</span><div class="mob-bar"></div></a>
+        <a href="index.html#how-it-works" class="mob-menu-link"><span class="mob-num">06</span><span class="mob-name">Process</span><div class="mob-bar"></div></a>
+        <a href="index.html#deliverables" class="mob-menu-link"><span class="mob-num">07</span><span class="mob-name">Deliverables</span><div class="mob-bar"></div></a>
+        <a href="index.html#proof"        class="mob-menu-link"><span class="mob-num">08</span><span class="mob-name">Proof</span><div class="mob-bar"></div></a>
+        <a href="index.html#testimonials" class="mob-menu-link"><span class="mob-num">09</span><span class="mob-name">Testimonials</span><div class="mob-bar"></div></a>
+        <a href="index.html#faq"          class="mob-menu-link"><span class="mob-num">10</span><span class="mob-name">FAQ</span><div class="mob-bar"></div></a>
+        <a href="blog.html"               class="mob-menu-link"><span class="mob-num">11</span><span class="mob-name">Blog</span><div class="mob-bar"></div></a>
+        <a href="program.html"            class="mob-menu-link"><span class="mob-num">12</span><span class="mob-name">Program</span><div class="mob-bar"></div></a>
+      </div>
+      <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="mob-menu-cta">Book a Call →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="prog-hero spotlight-section">
+      <div class="spotlight-bg"></div>
+      <div class="container prog-hero-content reveal-up">
+        <span class="prog-eyebrow">First Cohort — Limited Intake</span>
+        <h1 class="gold-gradient-text">Khun Camp Creator<br>Development Program</h1>
+        <p class="hero-subtext">60 days of real structure, a full team behind you, and a clear path toward monetization. For creators who are serious.</p>
+        <a href="#apply" class="btn-primary btn-lg magnetic-item">Apply Now — $300</a>
+        <div class="prog-stats">
+          <div class="hero-stat">
+            <span class="prog-stat-num">60</span>
+            <span class="prog-stat-label">Days</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="prog-stat-num">$300</span>
+            <span class="prog-stat-label">One-Time</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="prog-stat-num">5</span>
+            <span class="prog-stat-label">Spots Only</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="prog-stat-num">80%</span>
+            <span class="prog-stat-label">Deal Revenue Kept</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section class="prog-section">
+      <div class="container reveal-up">
+        <span class="prog-section-eyebrow">What's Included</span>
+        <h2>Everything you get <span class="gold-gradient-text">in 60 days</span></h2>
+        <div class="get-grid">
+          <div class="get-item">
+            <span class="get-item-icon">📐</span>
+            <h4>Content Strategy</h4>
+            <p>Clear direction on what to make, when to post, and why it works for your specific channel.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">🎯</span>
+            <h4>Creative Direction</h4>
+            <p>Ideas, concepts, and execution support that sharpen your content from the inside out.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">✂️</span>
+            <h4>Editing Support</h4>
+            <p>Khun Camp editors helping shape your videos so they hold attention and convert viewers.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">📅</span>
+            <h4>Posting Structure</h4>
+            <p>A consistent schedule designed around your growth goals — not just what feels easy.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">🏷️</span>
+            <h4>Brand Positioning</h4>
+            <p>Sharpen your identity so brands and audiences take notice and remember who you are.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">📈</span>
+            <h4>Channel Growth Guidance</h4>
+            <p>Ongoing support and strategic adjustments as your channel evolves over the 60 days.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">💰</span>
+            <h4>Monetization Planning</h4>
+            <p>Early roadmap for turning your channel into real income — built around your niche.</p>
+          </div>
+          <div class="get-item">
+            <span class="get-item-icon">🌐</span>
+            <h4>Khun Camp Ecosystem</h4>
+            <p>Exposure through our network of creators, partners, and brands actively looking for talent.</p>
+          </div>
+        </div>
+
+        <!-- Brand Deal -->
+        <div class="deal-box">
+          <span class="prog-section-eyebrow">Brand Outreach</span>
+          <h3>We help you <span class="gold-gradient-text">land brand deals.</span></h3>
+          <div class="deal-layout">
+            <div class="deal-bar-wrap">
+              <div class="deal-bar-labels">
+                <span>You keep</span>
+                <span>Khun Camp</span>
+              </div>
+              <div class="deal-track">
+                <div class="deal-fill"></div>
+              </div>
+              <div class="deal-pct-labels">
+                <span class="deal-pct-you">80%</span>
+                <span class="deal-pct-kc">20%</span>
+              </div>
+              <p class="deal-desc">Khun Camp reaches out to brands that fit your content, manages the conversation, and supports the deal from start to finish. You keep the majority. In many cases, creators also receive free products to keep.</p>
+            </div>
+            <div class="deal-example">
+              <span class="deal-example-eyebrow">Example</span>
+              <span class="deal-example-deal">$800 brand deal</span>
+              <span class="deal-example-you">$640 to you</span>
+              <span class="deal-example-note">+ free products in many cases</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="price-block">
+          <div class="price-number">$300</div>
+          <div class="price-detail">
+            <strong>One-time investment. 60 days of full support.</strong><br>
+            Covers editors, systems, strategy, and the entire Khun Camp team.<br>
+            After 60 days — creators who continue get <strong>20% off their first retainer month.</strong>
+          </div>
+        </div>
+
+        <!-- Qualifier -->
+        <p class="qualifier">
+          This is <strong>not</strong> for creators who just want to post randomly.<br>
+          This is for creators who want <strong>a system, a team, better content,</strong> and a clearer path toward monetization.<br>
+          We are only accepting a small first group so we can give each creator proper attention.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+    <section id="apply">
+      <div class="container reveal-up">
+        <div class="section-header">
+          <span class="prog-section-eyebrow">Apply Now</span>
+          <h2>Tell us about <span class="gold-gradient-text">your channel</span></h2>
+          <p>We review every application and reach out to selected creators within a few days.</p>
+        </div>
+
+        <div class="form-box">
+          <h3>Application Form</h3>
+          <p>Fill in the form below. We'll review your application and get back to you.</p>
+
+          <iframe
+            class="tally-embed"
+            src="https://tally.so/embed/D4xkeE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="560"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Khun Camp Creator Development Program Application">
+          </iframe>
+          <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e["src"]=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Khun Camp. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-link" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/khunshawn" class="footer-social-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12c0-3.2 0-3.6.1-4.8C2.4 3.9 4 2.3 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1.0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 3.3A4.8 4.8 0 0 1 14.9 0h-3.6v16.4a2.9 2.9 0 0 1-2.9 2.5 2.9 2.9 0 0 1-2.9-2.9 2.9 2.9 0 0 1 2.9-2.9c.3 0 .5 0 .8.1V9.5a6.5 6.5 0 0 0-.8 0 6.5 6.5 0 0 0-6.5 6.5 6.5 6.5 0 0 0 6.5 6.5 6.5 6.5 0 0 0 6.5-6.5V8.1a8.3 8.3 0 0 0 4.8 1.5V6a4.8 4.8 0 0 1-3.1-2.7z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/khun-camp" class="footer-social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.3A1.7 1.7 0 1 1 8.2 6.6 1.7 1.7 0 0 1 6.5 8.3zM19 19h-3v-4.7c0-1.4-.5-2.3-1.7-2.3a1.8 1.8 0 0 0-1.7 1.2 2.3 2.3 0 0 0-.1.9V19h-3v-9h3v1.2a3.3 3.3 0 0 1 3-1.6c2.1 0 3.5 1.4 3.5 4.3z"/></svg>
+        </a>
+      </div>
+      <p><a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="text-gold">Book a Discovery Call</a></p>
+    </div>
+  </footer>
+
+  <!-- CDN SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="//code.tidio.co/foqxe4dlsoqib33eipiiyhoga58t3b1z.js" defer></script>
+
+</body>
+</html>

@@ -3072,3 +3072,24 @@ body {
   color: #555;
 }
 /* ── END AUDIT SECTION ─────────────────────────────────────────── */
+/* ── HERO PROGRAM LINK (3rd CTA) ───────────────────────────────── */
+.hero-program-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+  padding: 4px 0;
+}
+
+.hero-program-link:hover { opacity: 1; }
+
+.hero-program-arrow { transition: transform 0.2s ease; }
+
+.hero-program-link:hover .hero-program-arrow { transform: translateX(4px); }
+/* ── END HERO PROGRAM LINK ─────────────────────────────────────── */
