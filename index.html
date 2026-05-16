@@ -81,9 +81,18 @@
   <link rel="icon" type="image/webp" sizes="128x128" href="images/KhunCamp-Logo-badge-favicon-128.webp">
   <link rel="apple-touch-icon" href="images/KhunCamp-Logo-badge-favicon-128.webp">
   <link rel="manifest" href="manifest.json">
+  <!-- Preload above-fold assets -->
+  <link rel="preload" as="image" href="images/KhunCamp-Logo-nav.webp">
+
+  <!-- Font connections -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap&font-display=swap" rel="stylesheet">
+
+  <!-- Preconnect CDN scripts -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
   <link rel="stylesheet" href="css/style.css">
   <style>
     .audit-card-cta {
@@ -114,7 +123,7 @@
 <header id="site-header">
   <nav class="container nav-inner">
     <a href="#hero" class="nav-logo">
-      <img src="images/KhunCamp-Logo-nav.webp" alt="Khun Camp Logo" height="46">
+      <img src="images/KhunCamp-Logo-nav.webp" alt="Khun Camp Logo" width="140" height="46" loading="eager" fetchpriority="high">
     </a>
 
     <!-- Desktop CTA — hidden on mobile -->
@@ -162,21 +171,21 @@
   <!-- MOBILE MENU — hidden on desktop -->
   <div id="mobile-menu" aria-hidden="true">
     <div class="mobile-menu-links">
-      <a href="#hero"         class="mob-menu-link"><span class="mob-num">01</span><span class="mob-name">Home</span><div class="mob-bar"></div></a>
-      <a href="#who-we-serve" class="mob-menu-link"><span class="mob-num">02</span><span class="mob-name">Who We Serve</span><div class="mob-bar"></div></a>
-      <a href="#audit"        class="mob-menu-link"><span class="mob-num">03</span><span class="mob-name">Pricing</span><div class="mob-bar"></div></a>
-      <a href="#problem"      class="mob-menu-link"><span class="mob-num">04</span><span class="mob-name">Problem</span><div class="mob-bar"></div></a>
-      <a href="#solution"     class="mob-menu-link"><span class="mob-num">05</span><span class="mob-name">System</span><div class="mob-bar"></div></a>
-      <a href="#how-it-works" class="mob-menu-link"><span class="mob-num">06</span><span class="mob-name">Process</span><div class="mob-bar"></div></a>
-      <a href="#deliverables" class="mob-menu-link"><span class="mob-num">07</span><span class="mob-name">Deliverables</span><div class="mob-bar"></div></a>
-      <a href="#proof"        class="mob-menu-link"><span class="mob-num">08</span><span class="mob-name">Proof</span><div class="mob-bar"></div></a>
-      <a href="#testimonials" class="mob-menu-link"><span class="mob-num">09</span><span class="mob-name">Testimonials</span><div class="mob-bar"></div></a>
-      <a href="#faq"          class="mob-menu-link"><span class="mob-num">10</span><span class="mob-name">FAQ</span><div class="mob-bar"></div></a>
-      <a href="blog.html"     class="mob-menu-link"><span class="mob-num">11</span><span class="mob-name">Blog</span><div class="mob-bar"></div></a>
-      <a href="events.html"   class="mob-menu-link"><span class="mob-num">12</span><span class="mob-name">Events</span><div class="mob-bar"></div></a>
-      <a href="program.html"  class="mob-menu-link"><span class="mob-num">13</span><span class="mob-name">Program</span><div class="mob-bar"></div></a>
+      <a href="#hero"         class="mob-menu-link" tabindex="-1"><span class="mob-num">01</span><span class="mob-name">Home</span><div class="mob-bar"></div></a>
+      <a href="#who-we-serve" class="mob-menu-link" tabindex="-1"><span class="mob-num">02</span><span class="mob-name">Who We Serve</span><div class="mob-bar"></div></a>
+      <a href="#audit"        class="mob-menu-link" tabindex="-1"><span class="mob-num">03</span><span class="mob-name">Pricing</span><div class="mob-bar"></div></a>
+      <a href="#problem"      class="mob-menu-link" tabindex="-1"><span class="mob-num">04</span><span class="mob-name">Problem</span><div class="mob-bar"></div></a>
+      <a href="#solution"     class="mob-menu-link" tabindex="-1"><span class="mob-num">05</span><span class="mob-name">System</span><div class="mob-bar"></div></a>
+      <a href="#how-it-works" class="mob-menu-link" tabindex="-1"><span class="mob-num">06</span><span class="mob-name">Process</span><div class="mob-bar"></div></a>
+      <a href="#deliverables" class="mob-menu-link" tabindex="-1"><span class="mob-num">07</span><span class="mob-name">Deliverables</span><div class="mob-bar"></div></a>
+      <a href="#proof"        class="mob-menu-link" tabindex="-1"><span class="mob-num">08</span><span class="mob-name">Proof</span><div class="mob-bar"></div></a>
+      <a href="#testimonials" class="mob-menu-link" tabindex="-1"><span class="mob-num">09</span><span class="mob-name">Testimonials</span><div class="mob-bar"></div></a>
+      <a href="#faq"          class="mob-menu-link" tabindex="-1"><span class="mob-num">10</span><span class="mob-name">FAQ</span><div class="mob-bar"></div></a>
+      <a href="blog.html"     class="mob-menu-link" tabindex="-1"><span class="mob-num">11</span><span class="mob-name">Blog</span><div class="mob-bar"></div></a>
+      <a href="events.html"   class="mob-menu-link" tabindex="-1"><span class="mob-num">12</span><span class="mob-name">Events</span><div class="mob-bar"></div></a>
+      <a href="program.html"  class="mob-menu-link" tabindex="-1"><span class="mob-num">13</span><span class="mob-name">Program</span><div class="mob-bar"></div></a>
     </div>
-    <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="mob-menu-cta">Book a Call →</a>
+    <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="mob-menu-cta" tabindex="-1">Book a Call →</a>
   </div>
 </header>
 
@@ -482,29 +491,29 @@
         </div>
         <div class="bento-grid">
           <div class="bento-item reveal-up bento-span-2">
-            <h4 class="gold-gradient-text">Weekly Strategy Guidance</h4>
+            <h3 class="gold-gradient-text bento-h3">Weekly Strategy Guidance</h3>
             <p>Direct access to high-level strategy. We hold weekly calls or async breakdowns focused on the Three Pillars: Titles, Hooks, and Offers.</p>
           </div>
           <div class="bento-item reveal-up">
-            <h4 class="gold-gradient-text">Full Content System</h4>
+            <h3 class="gold-gradient-text bento-h3">Full Content System</h3>
             <p>A mapped content calendar and pillars designed for sustainable, compounding growth.</p>
           </div>
           <div class="bento-item reveal-up">
-            <h4 class="gold-gradient-text">Editor & Thumbnail Direction</h4>
+            <h3 class="gold-gradient-text bento-h3">Editor & Thumbnail Direction</h3>
             <p>Creative briefs and feedback loops that ensure quality rises every month.</p>
           </div>
           <div class="bento-item reveal-up">
-            <h4 class="gold-gradient-text">SEO & Optimisation</h4>
+            <h3 class="gold-gradient-text bento-h3">SEO & Optimisation</h3>
             <p>Upload checklists, metadata, and internal linking optimised for Search and Suggested traffic.</p>
           </div>
           <div class="bento-item reveal-up">
-            <h4 class="gold-gradient-text">AI-Assisted Workflows</h4>
+            <h3 class="gold-gradient-text bento-h3">AI-Assisted Workflows</h3>
             <p>Proprietary workflows for idea expansion and scripting, leveraging AI without losing your human voice.</p>
           </div>
           <div class="bento-item reveal-up bento-span-3 bento-highlight">
             <div class="bento-highlight-inner">
               <div>
-                <h4 class="gold-gradient-text">Website & Creator Infrastructure</h4>
+                <h3 class="gold-gradient-text bento-h3">Website & Creator Infrastructure</h3>
                 <p>When you're ready to scale beyond the platform, we build the offer pages and funnels to capture your audience.</p>
               </div>
               <span class="badge">OPTIONAL MODULE</span>
@@ -674,7 +683,7 @@
       <div class="container">
         <div class="founder-block reveal-up">
           <div class="founder-image">
-            <img src="images/KhunCamp by window in black blazer KhunCamp Khun Camp.webp" alt="KhunShawn — Content Systems Engineer">
+            <img src="images/KhunCamp by window in black blazer KhunCamp Khun Camp.webp" alt="KhunShawn — Content Systems Engineer" width="480" height="600" loading="lazy">
           </div>
           <div class="founder-info">
             <p class="section-eyebrow">LED BY</p>
@@ -704,7 +713,7 @@
           <!-- PODCAST CARD 1 -->
           <div class="podcast-card" data-podcast="Modern Dating vs. Arranged Marriage | Khun Camp Podcast #1" data-images='["images/pd1.webp","images/pd2.webp","images/pd3.webp"]'>
             <div class="podcast-card-img">
-              <img src="images/pd1.webp" alt="Modern Dating vs. Arranged Marriage | Khun Camp Podcast #1">
+              <img src="images/pd1.webp" alt="Modern Dating vs. Arranged Marriage | Khun Camp Podcast #1" width="400" height="400" loading="lazy">
             </div>
             <div class="proof-overlay"><span>Khun Camp Podcast EP #1</span></div>
           </div>
@@ -712,7 +721,7 @@
           <!-- PODCAST CARD 2 -->
           <div class="podcast-card" data-podcast="Talk about online dating | Khun Camp Podcast #2" data-images='["images/podcast1.png","images/podcast2.png","images/podcast3.png"]'>
             <div class="podcast-card-img">
-              <img src="images/podcast1.png" alt="Khun Camp Podcast EP #2">
+              <img src="images/podcast1.png" alt="Khun Camp Podcast EP #2" width="400" height="400" loading="lazy">
             </div>
             <div class="proof-overlay"><span>Khun Camp Podcast EP #2</span></div>
           </div>
@@ -720,7 +729,7 @@
           <!-- PODCAST CARD 3 -->
           <div class="podcast-card" data-podcast="Ghosting and Conflict | Khun Camp Podcast #3" data-images='["images/Khun Shawn ep3-1.webp","images/Khun Shawn ep3-2.webp","images/Khun Shawn ep3-3.webp"]'>
             <div class="podcast-card-img">
-              <img src="images/Khun Shawn ep3-2.webp" alt="Khun Camp Podcast EP #3">
+              <img src="images/Khun Shawn ep3-2.webp" alt="Khun Camp Podcast EP #3" width="400" height="400" loading="lazy">
             </div>
             <div class="proof-overlay"><span>Khun Camp Podcast EP #3</span></div>
           </div>
@@ -728,7 +737,7 @@
           <!-- PODCAST CARD 4 -->
           <div class="podcast-card" data-podcast="The Divine Union | Khun Camp Podcast #4" data-images='["images/Khun Shawn ep4-1.webp","images/Khun Shawn ep4-2.webp","images/Khun Shawn ep4-3.webp"]'>
             <div class="podcast-card-img">
-              <img src="images/Khun Shawn ep4-1.webp" alt="Khun Camp Podcast EP #4">
+              <img src="images/Khun Shawn ep4-1.webp" alt="Khun Camp Podcast EP #4" width="400" height="400" loading="lazy">
               </div>
               <div class="proof-overlay"><span>Khun Camp Podcast EP #4</span></div>
           </div>
@@ -857,7 +866,7 @@
     <div class="featured-card">
 
       <div class="featured-media">
-         <video src="images/marcus-testimonial.MP4" poster="images/marcus-thumb.jpg"
+         <video src="images/marcus-testimonial.MP4" poster="images/marcus-thumb.jpg" preload="none"
                controls style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         <!-- PLACEHOLDER — replace with your video/thumbnail (see instructions above) -->
         <div class="media-badge">Featured</div>
@@ -920,7 +929,7 @@
         <div class="card-photo">
           
            
-            <img src="images/callie.jpg" alt="Aisha L." />
+            <img src="images/callie.jpg" alt="Callie Johnson" width="80" height="80" loading="lazy" />
           
           <span class="photo-placeholder"></span>
         </div>
@@ -1005,7 +1014,7 @@ I’m very grateful for the work he did and would happily recommend him to anyon
         <div class="card-photo">
           
            
-            <img src="images/Erosa.jpg" alt="M Jay" />
+            <img src="images/Erosa.jpg" alt="M Jay" width="80" height="80" loading="lazy" />
           
           <span class="photo-placeholder"></span>
         </div>
@@ -1167,12 +1176,12 @@ If you’re looking for someone who combines content creation skills with leader
             <a href="https://www.linkedin.com/company/khun-camp" class="footer-social-link" aria-label="LinkedIn"> <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"> <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.3A1.7 1.7 0 1 1 8.2 6.6 1.7 1.7 0 0 1 6.5 8.3zM19 19h-3v-4.7c0-1.4-.5-2.3-1.7-2.3a1.8 1.8 0 0 0-1.7 1.2 2.3 2.3 0 0 0-.1.9V19h-3v-9h3v1.2a3.3 3.3 0 0 1 3-1.6c2.1 0 3.5 1.4 3.5 4.3z"/> </svg> </a> </div> <p>
               <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="text-gold">Book a Discovery Call</a></p> </div> </footer>
 
-  <!-- CDN SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- CDN SCRIPTS — deferred to unblock render -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 
 
   

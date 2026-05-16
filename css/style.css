@@ -88,6 +88,8 @@ section {
 }
  
 .text-gold { color: var(--gold-primary); }
+/* Inline text-gold links need underline for non-color accessibility */
+a.text-gold { text-decoration: underline; text-underline-offset: 3px; }
 .text-dim { color: var(--text-dim); }
 .text-center { text-align: center; }
  
@@ -160,6 +162,12 @@ section {
   transition: border-color 0.4s ease, background-color 0.4s ease;
 }
  
+.bento-item h3.bento-h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
 .bento-item h4 {
   margin-bottom: 0.75rem;
 }
@@ -218,6 +226,7 @@ section {
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 1.5rem;
+  will-change: transform;
 }
  
 @keyframes spin {
@@ -249,6 +258,7 @@ section {
   z-index: 10000;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+  will-change: transform;
 }
  
 #cursor-dot {
@@ -2165,7 +2175,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #444;
+  color: #888;
   padding: 14px 14px;
   text-decoration: none;
   white-space: nowrap;
