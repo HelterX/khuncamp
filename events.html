@@ -23,9 +23,14 @@
   <link rel="manifest" href="manifest.json">
 
   <!-- Fonts -->
+  <!-- Preload above-fold assets -->
+  <link rel="preload" as="image" href="images/KhunCamp-Logo-nav.webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap&font-display=swap" rel="stylesheet">
 
   <!-- Site CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -621,7 +626,7 @@
   <header id="site-header">
     <nav class="container nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="images/KhunCamp-Logo-nav.webp" alt="Khun Camp Logo" height="46">
+        <img src="images/KhunCamp-Logo-nav.webp" alt="Khun Camp Logo" width="140" height="46" loading="eager" fetchpriority="high">
       </a>
       <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="btn-primary btn-sm magnetic-item nav-desktop-cta">Book a Call</a>
       <button class="ham-btn" id="ham-btn" aria-label="Open menu" aria-expanded="false">
@@ -631,23 +636,33 @@
 
     <div id="sub-nav">
       <div class="sub-nav-inner">
-        <a href="index.html#hero"         class="sub-nav-link">Home</a>
+        <a href="index.html"                                        class="sub-nav-link">Home</a>
         <span class="sub-nav-div"></span>
-        <a href="index.html#who-we-serve" class="sub-nav-link">Who We Serve</a>
+        <a href="index.html#who-we-serve"                           class="sub-nav-link">Who We Serve</a>
         <span class="sub-nav-div"></span>
-        <a href="index.html#audit"        class="sub-nav-link">Pricing</a>
+        <a href="index.html#audit"                                  class="sub-nav-link">Pricing</a>
         <span class="sub-nav-div"></span>
-        <a href="index.html#proof"        class="sub-nav-link">Proof</a>
+        <a href="index.html#problem"                                class="sub-nav-link">Problem</a>
         <span class="sub-nav-div"></span>
-        <a href="index.html#testimonials" class="sub-nav-link">Testimonials</a>
+        <a href="index.html#solution"                               class="sub-nav-link">System</a>
         <span class="sub-nav-div"></span>
-        <a href="index.html#faq"          class="sub-nav-link">FAQ</a>
+        <a href="index.html#how-it-works"                           class="sub-nav-link">Processes</a>
         <span class="sub-nav-div"></span>
-        <a href="blog.html"               class="sub-nav-link">Blog</a>
+        <a href="index.html#deliverables"                           class="sub-nav-link">Deliverables</a>
         <span class="sub-nav-div"></span>
-        <a href="events.html"             class="sub-nav-link active">Events</a>
+        <a href="index.html#proof"                                  class="sub-nav-link">Proof</a>
         <span class="sub-nav-div"></span>
-        <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="sub-nav-link">Book a Call</a>
+        <a href="index.html#testimonials"                           class="sub-nav-link">Testimonials</a>
+        <span class="sub-nav-div"></span>
+        <a href="index.html#faq"                                    class="sub-nav-link">FAQ</a>
+        <span class="sub-nav-div"></span>
+        <a href="blog.html"                                         class="sub-nav-link">Blog</a>
+        <span class="sub-nav-div"></span>
+        <a href="events.html"                                       class="sub-nav-link active">Events</a>
+        <span class="sub-nav-div"></span>
+        <a href="program.html"                                      class="sub-nav-link">Program</a>
+        <span class="sub-nav-div"></span>
+        <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7"    class="sub-nav-link">Book a Call</a>
       </div>
     </div>
 
