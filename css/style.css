@@ -3103,3 +3103,66 @@ body {
 
 .hero-program-link:hover .hero-program-arrow { transform: translateX(4px); }
 /* ── END HERO PROGRAM LINK ─────────────────────────────────────── */
+
+/* ── SOP 2026-05-19: PRICING CARD TIER COLORS ─────────────────── */
+
+/* Border tier colors — override base .audit-card border */
+.audit-card.card-gold   { border: 2px solid #E5B83A; }
+.audit-card.card-slate  { border: 2px solid #8FA9C9; }
+.audit-card.card-teal   { border: 2px solid #4A9D9C; }
+.audit-card.card-purple { border: 2px solid #7A4FBF; }
+
+/* Featured cards (Best Value / Most Popular) get 4px border */
+.audit-card.audit-card--featured.card-gold   { border: 4px solid #E5B83A; }
+.audit-card.audit-card--featured.card-slate  { border: 4px solid #8FA9C9; }
+.audit-card.audit-card--featured.card-teal   { border: 4px solid #4A9D9C; }
+.audit-card.audit-card--featured.card-purple { border: 4px solid #7A4FBF; }
+
+/* Override hover so it stays in tier color */
+.audit-card.card-gold:hover   { border-color: #F0C84A; }
+.audit-card.card-slate:hover  { border-color: #A8C0DA; }
+.audit-card.card-teal:hover   { border-color: #5AADAC; }
+.audit-card.card-purple:hover { border-color: #8A5FCF; }
+
+/* Monthly price text color matches tier */
+.audit-card.card-teal   .audit-price { color: #4A9D9C; }
+.audit-card.card-purple .audit-price { color: #7A4FBF; }
+
+/* MONTHLY pill badge */
+.monthly-pill {
+  display: inline-block;
+  background: #4A9D9C;
+  color: #fff;
+  font-size: 9pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+/* /mo suffix — 60% of price size, baseline-aligned */
+.mo-suffix {
+  font-size: 60%;
+  vertical-align: baseline;
+}
+
+/* Italic descriptor under bullets */
+.audit-card-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #C9A961;
+  line-height: 1.5;
+  padding-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Keyword highlight in bullets */
+.kw {
+  font-weight: 700;
+  color: #D4A537;
+}
+
+/* ── END SOP 2026-05-19 ────────────────────────────────────────── */
