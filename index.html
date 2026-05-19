@@ -36,7 +36,7 @@
     },
     "offers": {
       "@type": "Offer",
-      "price": "500.00",
+      "price": "499.00",
       "priceCurrency": "USD"
     },
     "description": "Professional YouTube channel audits and full-service growth infrastructure for creators."
@@ -109,6 +109,79 @@
     .audit-features {
       flex: 1;
     }
+
+    /* Pricing track layout */
+    .pricing-track {
+      margin-bottom: 3rem;
+    }
+    .pricing-track-header {
+      margin-bottom: 2rem;
+    }
+    .pricing-track-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--gold, #c9a84c);
+      border: 1px solid var(--gold, #c9a84c);
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .pricing-track-label h3 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      margin: 0.3rem 0 0.6rem;
+    }
+    .pricing-track-sub {
+      color: var(--text-muted, #999);
+      font-size: 0.95rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .pricing-track-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin: 3rem 0;
+    }
+    .audit-card-note {
+      font-size: 0.8rem;
+      color: var(--text-muted, #888);
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 0;
+      padding-top: 12px;
+    }
+    .pricing-hidden-cards {
+      margin-top: 1.5rem;
+    }
+    .pricing-see-all {
+      text-align: center;
+      margin-top: 1.75rem;
+    }
+    .btn-see-all {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text-muted, #aaa);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 10px 28px;
+      border-radius: 99px;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-see-all:hover,
+    .btn-see-all--open {
+      border-color: var(--gold, #c9a84c);
+      color: var(--gold, #c9a84c);
+    }
+    .see-all-arrow {
+      margin-left: 6px;
+      display: inline-block;
+    }
+
   </style>
 </head>
 <body>
@@ -263,77 +336,328 @@
 </section>
 
 
-<!-- PAID DIAGNOSTIC -->
+<!-- PRICING -->
 <section id="audit">
   <div class="container">
+
     <div class="section-header reveal-up text-center">
-      <p class="section-eyebrow">PAID DIAGNOSTIC</p>
-      <h2>48-Hour Content-To-<br><span class="gold-gradient-text">Customer Audit</span></h2>
-      <p class="section-subtext">Stop pitching. Start proving. Choose your depth. We'll show you exactly where your content is leaking leads and what to do about it.</p>
+      <p class="section-eyebrow">SERVICES & PRICING</p>
+      <h2>Two Tracks.<br><span class="gold-gradient-text">One Decision.</span></h2>
+      <p class="section-subtext">Whether you're a business owner installing AI into your operations or a creator turning content into customers — choose the track that fits where you are right now.</p>
     </div>
 
-    <div class="audit-grid reveal-up">
-
-      <!-- Tier 1 -->
-      <div class="audit-card">
-        <p class="audit-tier-label">Tier 1 Starter</p>
-        <p class="audit-price">$300<span class="audit-price-range">–500</span></p>
-        <p class="audit-price-sub">One-time</p>
-        <div class="audit-divider"></div>
-        <p class="audit-product-name">Lightweight Audit</p>
-        <ul class="audit-features">
-          <li>Content gap analysis</li>
-          <li>Top 3 quick wins identified</li>
-          <li>Written summary report</li>
-          <li>Delivered in 48 hours</li>
-        </ul>
-        <a href="https://buy.stripe.com/00w5kCgZe8BpeNeaxx7ss04" class="btn-ghost-gold audit-card-cta">Get Starter Audit →</a>
+    <!-- ── TRACK 1: AI SYSTEMS INSTALLATION ───────────────────────── -->
+    <div class="pricing-track reveal-up">
+      <div class="pricing-track-header">
+        <div class="pricing-track-label">
+          <span class="pricing-track-tag">FOR BUSINESS OWNERS</span>
+          <h3>AI Systems <span class="gold-gradient-text">Installation</span></h3>
+          <p class="pricing-track-sub">For local operators, agencies, consultants, clinics, and service providers who want AI working inside their business — not just on their phone.</p>
+        </div>
       </div>
 
-      <!-- Tier 2 — Featured -->
-      <div class="audit-card audit-card--featured">
-        <div class="audit-badge">Most Popular</div>
-        <p class="audit-tier-label">Tier 2 Deep Dive</p>
-        <p class="audit-price">$1,000<span class="audit-price-range">–2,000</span></p>
-        <p class="audit-price-sub">One-time</p>
-        <div class="audit-divider"></div>
-        <p class="audit-product-name">Channel &amp; Funnel Teardown</p>
-        <ul class="audit-features">
-          <li>Full channel audit</li>
-          <li>Funnel gap mapping</li>
-          <li>Content-to-conversion analysis</li>
-          <li>Priority action roadmap</li>
-          <li>60-min debrief call included</li>
-        </ul>
-        <a href="https://buy.stripe.com/aFa4gy4cseZNeNe6hh7ss07" class="btn-primary audit-card-cta">Get Deep Dive →</a>
+      <div class="audit-grid" id="ai-grid">
+
+        <!-- Card 1 — Live Installation Seat -->
+        <div class="audit-card">
+          <p class="audit-tier-label">Live Installation</p>
+          <p class="audit-price">$899</p>
+          <p class="audit-price-sub">One-time</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">Live Installation Seat</p>
+          <ul class="audit-features">
+            <li>VS Code setup</li>
+            <li>Codex setup &amp; training</li>
+            <li>Wispr Flow setup &amp; training</li>
+            <li>Live business workflow mapping</li>
+            <li>First AI workflow direction</li>
+          </ul>
+          <p class="audit-card-note">Bring your laptop. Leave with VS Code, Codex, Wispr Flow, and your first AI business workflow installed.</p>
+          <a href="#" class="btn-ghost-gold audit-card-cta">Reserve Live Installation Seat — $899</a>
+        </div>
+
+        <!-- Card 2 — Full Implementation Bundle — Featured -->
+        <div class="audit-card audit-card--featured">
+          <div class="audit-badge">Best Value</div>
+          <p class="audit-tier-label">Full Bundle</p>
+          <p class="audit-price">$1,499</p>
+          <p class="audit-price-sub">One-time</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">Full Implementation Bundle</p>
+          <ul class="audit-features">
+            <li>Everything in Live Installation Seat</li>
+            <li>Full course materials</li>
+            <li>AI business command center templates</li>
+            <li>10-day bounded implementation support</li>
+          </ul>
+          <p class="audit-card-note">The live install plus course materials, templates, and 10 days of support so the setup turns into real usage.</p>
+          <a href="#" class="btn-primary audit-card-cta">Get Full Implementation Bundle — $1,499</a>
+        </div>
+
+        <!-- Card 3 — Team Enablement -->
+        <div class="audit-card">
+          <p class="audit-tier-label">Team Retainer</p>
+          <p class="audit-price">$3,000<span class="audit-price-sub" style="font-size:1rem;">/mo</span></p>
+          <p class="audit-price-sub">Starts at · Monthly</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">AI Systems Team Enablement</p>
+          <ul class="audit-features">
+            <li>Staff training</li>
+            <li>Team workflow support</li>
+            <li>Implementation guidance</li>
+            <li>Adoption support</li>
+            <li>System rollout planning</li>
+          </ul>
+          <p class="audit-card-note">For companies that want AI adopted by the team, not just installed on one laptop.</p>
+          <a href="#" class="btn-ghost-gold audit-card-cta">Apply For Team Enablement</a>
+        </div>
+
       </div>
 
-      <!-- Tier 3 -->
-      <div class="audit-card">
-        <p class="audit-tier-label">Tier 3 Full Sprint</p>
-        <p class="audit-price">$3,000<span class="audit-price-range">–5,000</span></p>
-        <p class="audit-price-sub">One-time</p>
-        <div class="audit-divider"></div>
-        <p class="audit-product-name">Implementation Sprint</p>
-        <ul class="audit-features">
-          <li>Everything in Tier 2</li>
-          <li>Clip strategy + CTA map</li>
-          <li>Full funnel recommendations</li>
-          <li>Implementation plan</li>
-          <li>Priority access for 30 days</li>
-        </ul>
-        <a href="https://buy.stripe.com/eVq5kC6kAdVJawY8pp7ss05" class="btn-ghost-gold audit-card-cta">Full Sprint →</a>
+      <!-- Hidden AI cards -->
+      <div class="pricing-hidden-cards" id="ai-hidden" style="display:none;">
+        <div class="audit-grid">
+
+          <!-- Hidden: Public Live Seat -->
+          <div class="audit-card">
+            <p class="audit-tier-label">Future Public Price</p>
+            <p class="audit-price">$999</p>
+            <p class="audit-price-sub">One-time</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">Public Live Installation Seat</p>
+            <ul class="audit-features">
+              <li>Same live installation experience as the $899 seat</li>
+              <li>VS Code, Codex, Wispr Flow setup</li>
+              <li>Live business workflow mapping</li>
+              <li>First AI workflow direction</li>
+            </ul>
+            <p class="audit-card-note">Used after the first proof and testimonial round.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Reserve Public Live Installation Seat — $999</a>
+          </div>
+
+          <!-- Hidden: Owner Support Retainer -->
+          <div class="audit-card">
+            <p class="audit-tier-label">Owner Retainer</p>
+            <p class="audit-price">$1,499<span class="audit-price-sub" style="font-size:1rem;">/mo</span></p>
+            <p class="audit-price-sub">Monthly</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">AI Systems Owner Support</p>
+            <ul class="audit-features">
+              <li>Owner-level AI usage support</li>
+              <li>Workflow refinement</li>
+              <li>Tool recommendations</li>
+              <li>Light implementation guidance</li>
+            </ul>
+            <p class="audit-card-note">Keep Khun Camp close as your AI support layer after the installation.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Start Owner Support — $1,499/mo</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pricing-see-all reveal-up">
+        <button class="btn-see-all" id="ai-see-all-btn" onclick="togglePricing('ai')">
+          See All AI Systems Pricing <span class="see-all-arrow" id="ai-arrow">↓</span>
+        </button>
       </div>
 
     </div>
+    <!-- /Track 1 -->
+
+    <div class="pricing-track-divider"></div>
+
+    <!-- ── TRACK 2: CONTENT CREATOR GROWTH ────────────────────────── -->
+    <div class="pricing-track reveal-up">
+      <div class="pricing-track-header">
+        <div class="pricing-track-label">
+          <span class="pricing-track-tag">FOR CREATORS & COACHES</span>
+          <h3>Content Creator <span class="gold-gradient-text">Growth</span></h3>
+          <p class="pricing-track-sub">For YouTubers, coaches, educators, personal brands, and content-led entrepreneurs who want to turn content into consistent leads and revenue.</p>
+        </div>
+      </div>
+
+      <div class="audit-grid" id="creator-grid">
+
+        <!-- Card 1 — Diagnostic -->
+        <div class="audit-card">
+          <p class="audit-tier-label">Entry Diagnostic</p>
+          <p class="audit-price">$499</p>
+          <p class="audit-price-sub">One-time</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">Creator Growth Diagnostic</p>
+          <ul class="audit-features">
+            <li>Content &amp; channel review</li>
+            <li>Offer and CTA check</li>
+            <li>Top 3 bottlenecks identified</li>
+            <li>Quick-win action list</li>
+            <li>Written summary</li>
+          </ul>
+          <p class="audit-card-note">Find out why your content is not turning into stronger growth, leads, or revenue.</p>
+          <a href="#" class="btn-ghost-gold audit-card-cta">Book Creator Growth Diagnostic — $499</a>
+        </div>
+
+        <!-- Card 2 — Implementation Sprint — Featured -->
+        <div class="audit-card audit-card--featured">
+          <div class="audit-badge">Most Popular</div>
+          <p class="audit-tier-label">Implementation</p>
+          <p class="audit-price">$3,500</p>
+          <p class="audit-price-sub">One-time</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">Creator Growth Implementation Sprint</p>
+          <ul class="audit-features">
+            <li>Everything in Creator Growth Deep Dive</li>
+            <li>Clip strategy</li>
+            <li>CTA map</li>
+            <li>Funnel recommendations</li>
+            <li>Distribution priorities</li>
+            <li>30-day implementation plan</li>
+          </ul>
+          <p class="audit-card-note">Turn the diagnosis into a creator growth system and 30-day action plan.</p>
+          <a href="#" class="btn-primary audit-card-cta">Book Creator Growth Implementation Sprint — $3,500</a>
+        </div>
+
+        <!-- Card 3 — Creator Growth Engine -->
+        <div class="audit-card">
+          <p class="audit-tier-label">Monthly Retainer</p>
+          <p class="audit-price">$2,500<span class="audit-price-sub" style="font-size:1rem;">/mo</span></p>
+          <p class="audit-price-sub">Monthly</p>
+          <div class="audit-divider"></div>
+          <p class="audit-product-name">Creator Growth Engine</p>
+          <ul class="audit-features">
+            <li>Monthly creator growth support</li>
+            <li>Content-to-customer guidance</li>
+            <li>CTA testing</li>
+            <li>Distribution review</li>
+            <li>Performance direction</li>
+          </ul>
+          <p class="audit-card-note">Monthly creator growth support without pretending it includes a full production team.</p>
+          <a href="#" class="btn-ghost-gold audit-card-cta">Start Creator Growth Engine — $2,500/mo</a>
+        </div>
+
+      </div>
+
+      <!-- Hidden Creator cards -->
+      <div class="pricing-hidden-cards" id="creator-hidden" style="display:none;">
+        <div class="audit-grid">
+
+          <!-- Hidden: Deep Dive -->
+          <div class="audit-card">
+            <p class="audit-tier-label">Full Teardown</p>
+            <p class="audit-price">$1,499</p>
+            <p class="audit-price-sub">One-time</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">Creator Growth Deep Dive</p>
+            <ul class="audit-features">
+              <li>Channel and content audit</li>
+              <li>Offer and audience alignment review</li>
+              <li>Content-to-customer funnel map</li>
+              <li>Clip and CTA opportunity map</li>
+              <li>Priority roadmap</li>
+              <li>60-minute debrief call</li>
+            </ul>
+            <p class="audit-card-note">A full teardown of your channel, offer, CTA, and content-to-customer path.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Book Creator Growth Deep Dive — $1,499</a>
+          </div>
+
+          <!-- Hidden: VIP Sprint -->
+          <div class="audit-card">
+            <p class="audit-tier-label">VIP Sprint</p>
+            <p class="audit-price">$5,000</p>
+            <p class="audit-price-sub">One-time</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">Creator Growth VIP Sprint</p>
+            <ul class="audit-features">
+              <li>Deeper strategy</li>
+              <li>Implementation planning</li>
+              <li>Content-to-customer system design</li>
+              <li>Priority support</li>
+            </ul>
+            <p class="audit-card-note">For monetized creators and creator-founders who need a sharper growth system now.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Book Creator Growth VIP Sprint — $5,000</a>
+          </div>
+
+          <!-- Hidden: Engine Plus -->
+          <div class="audit-card">
+            <p class="audit-tier-label">Engine Plus</p>
+            <p class="audit-price">$5,000<span class="audit-price-sub" style="font-size:1rem;">/mo</span></p>
+            <p class="audit-price-sub">Monthly</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">Creator Growth Engine Plus</p>
+            <ul class="audit-features">
+              <li>Deeper strategy</li>
+              <li>Content calendar direction</li>
+              <li>Funnel improvements</li>
+              <li>Reporting</li>
+              <li>Limited production coordination</li>
+            </ul>
+            <p class="audit-card-note">For monetized creators who need deeper implementation across content, offer, and funnel.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Start Creator Growth Engine Plus — $5,000/mo</a>
+          </div>
+
+          <!-- Hidden: Team Engine -->
+          <div class="audit-card">
+            <p class="audit-tier-label">Team Engine</p>
+            <p class="audit-price">$7,500<span class="audit-price-sub" style="font-size:1rem;">/mo</span></p>
+            <p class="audit-price-sub">Starts at · Monthly</p>
+            <div class="audit-divider"></div>
+            <p class="audit-product-name">Creator Growth Team Engine</p>
+            <ul class="audit-features">
+              <li>Production coordination</li>
+              <li>Team workflows</li>
+              <li>Content systems</li>
+              <li>Reporting</li>
+              <li>Ongoing multi-platform implementation</li>
+            </ul>
+            <p class="audit-card-note">For creators with teams, editors, content systems, and multi-platform growth needs.</p>
+            <a href="#" class="btn-ghost-gold audit-card-cta">Apply For Creator Growth Team Engine</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pricing-see-all reveal-up">
+        <button class="btn-see-all" id="creator-see-all-btn" onclick="togglePricing('creator')">
+          See All Creator Growth Pricing <span class="see-all-arrow" id="creator-arrow">↓</span>
+        </button>
+      </div>
+
+    </div>
+    <!-- /Track 2 -->
 
     <div class="audit-cta reveal-up">
       <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="btn-primary btn-lg magnetic-item">Book a Call</a>
-      <p class="audit-cta-note">Not sure which tier fits? <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="text-gold">Book a free 15-min call</a> and we'll point you in the right direction.</p>
+      <p class="audit-cta-note">Not sure which track fits? <a href="https://calendar.app.google/1PVSKsN8UGwQiG3g7" class="text-gold">Book a free 15-min call</a> and we'll point you in the right direction.</p>
     </div>
 
   </div>
 </section>
+
+<script>
+  function togglePricing(track) {
+    var hidden = document.getElementById(track + '-hidden');
+    var btn = document.getElementById(track + '-see-all-btn');
+    var arrow = document.getElementById(track + '-arrow');
+    var isOpen = hidden.style.display !== 'none';
+
+    if (isOpen) {
+      hidden.style.display = 'none';
+      btn.classList.remove('btn-see-all--open');
+      arrow.textContent = '↓';
+      btn.innerHTML = btn.innerHTML.replace('See Less', track === 'ai' ? 'See All AI Systems Pricing' : 'See All Creator Growth Pricing').replace('↑', '↓');
+    } else {
+      hidden.style.display = 'block';
+      btn.classList.add('btn-see-all--open');
+    }
+
+    // Re-render button text cleanly
+    var label = track === 'ai' ? 'AI Systems' : 'Creator Growth';
+    if (!isOpen) {
+      btn.innerHTML = 'See Less ' + label + ' Pricing <span class="see-all-arrow" id="' + track + '-arrow">↑</span>';
+    } else {
+      btn.innerHTML = 'See All ' + label + ' Pricing <span class="see-all-arrow" id="' + track + '-arrow">↓</span>';
+    }
+  }
+</script>
 
     <!-- PROBLEM -->
     <section id="problem">
@@ -556,7 +880,7 @@
         </button>
         <div class="faq-a">
           <div class="faq-a-inner">
-            There are three tiers. <strong>Tier 1 ($300–500)</strong> is a lightweight audit covering content gaps, top quick wins, and a written summary — delivered in 48 hours. <strong>Tier 2 ($1,000–2,000)</strong> is a deep channel and funnel teardown with a priority action roadmap and a 60-minute debrief call. <strong>Tier 3 ($3,000–5,000)</strong> includes everything in Tier 2 plus clip strategy, a CTA map, full funnel recommendations, an implementation plan, and 30 days of priority access. Not sure which fits? Book a call — we'll guide you.
+            Khun Camp has two service tracks. <strong>AI Systems Installation</strong> is for business owners who want AI working inside their operations — starting from an $899 live installation seat up to a $3,000/month team enablement retainer. <strong>Content Creator Growth</strong> is for creators, coaches, and personal brands — starting from a $499 diagnostic up to a $7,500/month team engine. Not sure which track fits? Book a call — we'll point you in the right direction.
           </div>
         </div>
       </div>
